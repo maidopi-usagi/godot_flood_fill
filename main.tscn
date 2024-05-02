@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://1r3gdxpvde4q"]
+
+[ext_resource type="Script" path="res://jfa_impl/JumpFlooding.cs" id="2_qn38h"]
+[ext_resource type="Texture2D" uid="uid://b28joaarcup8i" path="res://godotte.jpg" id="2_qsffm"]
+[ext_resource type="RDShaderFile" uid="uid://s0ka3rtpnwpt" path="res://jfa_impl/flood_fill.glsl" id="3_o5h24"]
+
+[node name="Root" type="Node2D"]
+
+[node name="JF" type="Node2D" parent="."]
+script = ExtResource("2_qn38h")
+_tex = ExtResource("2_qsffm")
+_shader = ExtResource("3_o5h24")

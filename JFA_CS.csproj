@@ -1,0 +1,22 @@
+<Project Sdk="Godot.NET.Sdk/4.3.0-dev">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net7.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'ios' ">net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>12</LangVersion>
+<!--    <PublishAOT>true</PublishAOT>-->
+<!--    <PublishLzmaCompressed>true</PublishLzmaCompressed>-->
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GDTask" Version="1.2.2" />
+    <PackageReference Include="ImGui.NET" Version="1.90.1.1" />
+<!--    <PackageReference Include="PublishAotCompressed" Version="1.0.3" />-->
+<!--    <TrimmerRootAssembly Include="GodotSharp" />-->
+<!--    <TrimmerRootAssembly Include="$(TargetName)" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jfa_impl\flood_fill.glsl" />
+  </ItemGroup>
+</Project>
