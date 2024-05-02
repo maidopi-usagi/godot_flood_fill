@@ -6,7 +6,7 @@ https://github.com/maidopi-usagi/godot_flood_fill/assets/33864304/d58fc078-9367-
 
 ## Dependencies
 * imgui-godot: https://github.com/pkdawson/imgui-godot
-*   Install the plugin to res://addons/imgui-godot/
+  * Install the plugin to res://addons/imgui-godot/
 * .NET 8.0
 * Godot 4.2+
 
